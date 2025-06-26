@@ -1,0 +1,284 @@
+PRIMISACT PROPRIETARY SOFTWARE LICENSE
+
+Copyright © 2025 Merlaz Limited. All rights reserved.
+
+================================================================================
+PROPRIETARY AND CONFIDENTIAL
+================================================================================
+
+This software, including all source code, object code, documentation, and 
+associated materials (collectively, the "Software"), is the exclusive property 
+of Merlaz Limited, a company incorporated in England and Wales ("Company"). 
+
+The Software contains proprietary and confidential information, including trade 
+secrets, technical data, algorithms, methodologies, and know-how that constitute 
+valuable intellectual property of the Company.
+
+================================================================================
+NO LICENSE GRANTED
+================================================================================
+
+NO LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE, TO ANY INTELLECTUAL 
+PROPERTY RIGHTS IS GRANTED BY THIS DOCUMENT. The Software is licensed, not sold.
+
+The Company retains all right, title, and interest in and to the Software, 
+including all intellectual property rights therein.
+
+================================================================================
+PROHIBITED ACTIVITIES
+================================================================================
+
+Without the express written consent of Merlaz Limited, you may NOT:
+
+1. USE, reproduce, modify, adapt, translate, or create derivative works of the Software
+2. DISTRIBUTE, license, sublicense, sell, rent, lease, or transfer the Software
+3. REVERSE ENGINEER, decompile, disassemble, or attempt to derive source code
+4. REMOVE, alter, or obscure any proprietary notices or labels on the Software
+5. ACCESS the Software to build competitive products or services
+6. BENCHMARK the Software against competitive products without written consent
+7. EXTRACT or harvest data, algorithms, or methodologies from the Software
+8. USE the Software for any unlawful purpose or in violation of applicable laws
+
+================================================================================
+AUTHORIZED ACCESS ONLY
+================================================================================
+
+Access to this Software is restricted to:
+- Authorized employees and contractors of Merlaz Limited
+- Parties who have executed a valid licensing agreement with the Company
+- Third parties specifically authorized in writing by the Company
+
+All authorized users must:
+- Maintain strict confidentiality of all Software and related information
+- Use the Software only for authorized business purposes
+- Comply with all security protocols and access restrictions
+- Report any unauthorized access or security breaches immediately
+
+================================================================================
+TRADE SECRET PROTECTION
+================================================================================
+
+This Software contains TRADE SECRETS of Merlaz Limited. Trade secrets include 
+but are not limited to:
+- Proprietary algorithms and artificial intelligence models
+- Database schemas and data structures  
+- Business logic and processing methodologies
+- User interface designs and user experience flows
+- Security implementations and cryptographic methods
+- Integration patterns and architectural designs
+
+Unauthorized disclosure of trade secrets may result in criminal prosecution 
+under applicable trade secret protection laws.
+
+================================================================================
+PATENT PROTECTION
+================================================================================
+
+The Software may be protected by issued patents and/or pending patent 
+applications owned by or licensed to Merlaz Limited. Use of the Software 
+may require a patent license. No patent license is granted by this notice.
+
+Patent-protected inventions may include:
+- Blockchain-based invention timestamping systems
+- AI-powered prior art detection methods
+- Smart contract escrow mechanisms for intellectual property
+- Expert network matching and evaluation algorithms
+- NFT-based intellectual property certification systems
+
+================================================================================
+COPYRIGHT PROTECTION
+================================================================================
+
+The Software is protected by copyright law and international copyright treaties. 
+Unauthorized reproduction or distribution may result in severe civil and criminal 
+penalties, including monetary damages and injunctive relief.
+
+Copyright registration numbers (when available):
+- Software Code: [Registration Pending]
+- User Interface: [Registration Pending] 
+- Documentation: [Registration Pending]
+
+================================================================================
+VIOLATIONS AND ENFORCEMENT
+================================================================================
+
+Violations of this license will result in:
+
+1. IMMEDIATE TERMINATION of any access rights
+
+2. AUTOMATIC STATUTORY DAMAGES AND FINES:
+   - Unauthorized access: £50,000 per incident
+   - Code copying/reverse engineering: £250,000 per violation
+   - Distribution or sharing: £500,000 per instance  
+   - Commercial use without license: £1,000,000 + all profits
+   - Trade secret disclosure: £2,000,000 per trade secret
+   - Creating derivative works: £750,000 per derivative work
+   - Patent infringement: £5,000,000 + ongoing royalties
+
+3. ADDITIONAL CIVIL LIABILITY for damages, including:
+   - Actual damages suffered by the Company (unlimited)
+   - Disgorgement of any profits derived from unauthorized use
+   - Attorneys' fees and court costs (full recovery)
+   - Punitive damages where permitted by law (up to treble damages)
+   - Expert witness fees and litigation costs
+   - Lost licensing revenue and future profits
+
+4. CRIMINAL PROSECUTION under applicable laws including:
+   - Copyright infringement (up to 5 years imprisonment + unlimited fines)
+   - Trade secret theft (up to 10 years imprisonment + unlimited fines)
+   - Computer fraud and abuse violations (up to 20 years + unlimited fines)
+   - Wire fraud and conspiracy charges
+   - International IP theft prosecution
+
+5. IMMEDIATE INJUNCTIVE RELIEF to prevent ongoing violations
+
+6. SEIZURE AND DESTRUCTION of all unauthorized copies
+
+The Company actively monitors for unauthorized use through automated detection 
+systems and will pursue all available legal remedies against violators without 
+warning or notice.
+
+================================================================================
+GOVERNING LAW AND JURISDICTION
+================================================================================
+
+This license is governed by the laws of Hong Kong SAR and England and Wales, 
+without regard to conflict of law principles. 
+
+Any disputes arising under this license shall be subject to the jurisdiction of:
+1. PRIMARY: Hong Kong Courts (company domicile)
+2. SECONDARY: English Courts (UK operations)
+3. ALTERNATIVE: Courts in the jurisdiction where violation occurred
+
+The Company reserves the right to pursue legal action in any jurisdiction where:
+- The violator is located or conducts business
+- The violation occurred or caused damage
+- Assets of the violator are located
+- The Software was unlawfully accessed or used
+
+Violators consent to personal jurisdiction in all such courts and waive any 
+objection to venue or inconvenient forum.
+
+================================================================================
+LICENSING AND COMMERCIAL USE
+================================================================================
+
+Commercial licensing of the Software may be available under separate terms.
+
+For licensing inquiries, contact:
+Merlaz Limited
+Email: contact@merlaz.com
+Address: No. 5, 17/F Strand 50,
+         50 Bonham Strand,
+         Sheung Wan,
+         Hong Kong
+Company Registration: 3318622
+
+UK Representative:
+Frederik Goossens
+12 Claire Place
+London E14 8NJ
+United Kingdom
+
+Licensing options may include:
+- Enterprise software licenses
+- White-label platform licenses  
+- API access and integration licenses
+- Technology transfer agreements
+
+================================================================================
+SECURITY AND MONITORING
+================================================================================
+
+The Company employs technical measures to protect the Software, including:
+- Access logging and monitoring
+- Digital watermarking and fingerprinting
+- Automated violation detection systems
+- Forensic tracking capabilities
+
+All access to the Software is logged and monitored. Unauthorized access attempts 
+will be reported to appropriate authorities.
+
+================================================================================
+EXPORT CONTROL
+================================================================================
+
+The Software may be subject to export control laws and regulations. Users are 
+responsible for compliance with all applicable export control requirements.
+
+Use or export of the Software may be restricted by:
+- UK Export Administration Regulations
+- US Export Administration Regulations (if applicable)
+- EU Dual Use Regulation
+- International sanctions regimes
+
+================================================================================
+NO WARRANTIES
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+The Company does not warrant that the Software will meet your requirements or 
+that operation will be uninterrupted or error-free.
+
+================================================================================
+LIMITATION OF LIABILITY
+================================================================================
+
+IN NO EVENT SHALL MERLAZ LIMITED BE LIABLE FOR ANY INDIRECT, INCIDENTAL, 
+SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, EVEN IF 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+This limitation applies to all theories of liability, whether based on warranty, 
+contract, statute, tort, or otherwise.
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+For all matters relating to this license:
+
+Merlaz Limited
+Email: contact@merlaz.com
+Address: No. 5, 17/F Strand 50,
+         50 Bonham Strand,
+         Sheung Wan,
+         Hong Kong
+Company Registration: 3318622
+
+UK Representative:
+Frederik Goossens
+12 Claire Place
+London E14 8NJ
+United Kingdom
+
+Emergency Security Contact: contact@merlaz.com
+Legal Enforcement: contact@merlaz.com
+
+================================================================================
+EFFECTIVE DATE AND UPDATES
+================================================================================
+
+This license is effective as of January 1, 2025, and may be updated from time to 
+time at the sole discretion of Merlaz Limited.
+
+Users will be notified of material changes to this license via email or other 
+appropriate means.
+
+Continued use of the Software after updates constitutes acceptance of the 
+revised license terms.
+
+================================================================================
+
+BY ACCESSING OR USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ, 
+UNDERSTOOD, AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE.
+
+IF YOU DO NOT AGREE TO THESE TERMS, YOU MUST NOT ACCESS OR USE THE SOFTWARE 
+AND MUST IMMEDIATELY CEASE ANY UNAUTHORIZED USE.
+
+================================================================================
+
+Last Updated: January 15, 2025
+Version: 1.0
