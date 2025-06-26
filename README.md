@@ -105,4 +105,15 @@ This repository demonstrates PrimisAct's own cost-effective IP protection strate
 
 ---
 
+# ⚠️ RESTRICTED ACCESS - CONFIDENTIALITY REQUIRED
+
+**AUTHORIZED PERSONNEL ONLY**
+All users must have executed confidentiality agreements.
+Email: frederik@merlaz.com for access requests.
+
+**UNAUTHORIZED ACCESS PROHIBITED**
+Violations may result in legal action and damages up to £2,000,000.
+
+---
+
 **© 2025 Merlaz Limited. All rights reserved.**
