@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimisAct - Protected Intellectual Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .warning-banner {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        .main-content {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 60px;
+        }
+
+        .protection-notice {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        .notice-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .notice-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .protection-details {
+            background: #111;
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+
+        .protection-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .protection-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #0a0a0a;
+            border-radius: 6px;
+            border-left: 2px solid #333;
+        }
+
+        .protection-icon {
+            color: #666;
+            font-size: 24px;
+            margin-right: 15px;
+            margin-top: 2px;
+        }
+
+        .protection-text {
+            flex: 1;
+        }
+
+        .protection-label {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .protection-desc {
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        .blockchain-proof {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .blockchain-title {
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .blockchain-details {
+            font-family: 'Courier New', monospace;
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .hash-display {
+            background: #000;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #666;
+            word-break: break-all;
+            margin: 10px 0;
+            border: 1px solid #333;
+        }
+
+        .legal-notice {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+
+        .legal-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .legal-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #ccc;
+            text-align: justify;
+        }
+
+        .coming-soon {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .coming-soon h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .coming-soon p {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .notify-form {
+            display: flex;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .notify-input {
+            flex: 1;
+            padding: 12px 16px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .notify-button {
+            background: #fff;
+            color: #000;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .notify-button:hover {
+            background: #f0f0f0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 36px;
+            }
+            
+            .protection-notice,
+            .protection-details,
+            .legal-notice {
+                padding: 20px;
+            }
+            
+            .notify-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="warning-banner">
+        ⚠️ PROTECTED INTELLECTUAL PROPERTY - UNAUTHORIZED USE PROHIBITED ⚠️
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="logo">PrimisAct™</div>
+            <div class="subtitle">Decentralized IP Protection Protocol</div>
+
+            <div class="protection-notice">
+                <div class="notice-title">🛡️ LEGAL NOTICE - READ BEFORE PROCEEDING</div>
+                <div class="notice-content">
+                    <strong>PrimisAct™</strong> is a proprietary decentralized IP protection protocol owned by <strong>Frederik Goossens</strong> via <strong>Merlaz Limited</strong>. 
+                    This technology is protected by copyright, trade secrets, and GitHub-verified prior art. 
+                    <br><br>
+                    <strong>NO LICENSE GRANTED.</strong> Any unauthorized use, reproduction, or implementation of similar systems 
+                    may result in legal action. We actively monitor for violations and offer substantial rewards for reporting IP theft.
+                </div>
+            </div>
+
+            <div class="protection-details">
+                <div class="protection-title">Active Protection Measures</div>
+                
+                <div class="protection-item">
+                    <div class="protection-icon">⏰</div>
+                    <div class="protection-text">
+                        <div class="protection-label">Blockchain Timestamp</div>
+                        <div class="protection-desc">June 26, 2025 - Immutable proof of creation date</div>
+                    </div>
+                </div>
+
+                <div class="protection-item">
+                    <div class="protection-icon">©</div>
+                    <div class="protection-text">
+                        <div class="protection-label">Copyright Protection</div>
+                        <div class="protection-desc">All documentation, code, and concepts protected under international copyright law</div>
+                    </div>
+                </div>
+
+                <div class="protection-item">
+                    <div class="protection-icon">🔒</div>
+                    <div class="protection-text">
+                        <div class="protection-label">Trade Secret Status</div>
+                        <div class="protection-desc">Implementation details protected as confidential business information</div>
+                    </div>
+                </div>
+
+                <div class="protection-item">
+                    <div class="protection-icon">📝</div>
+                    <div class="protection-text">
+                        <div class="protection-label">GitHub Verification</div>
+                        <div class="protection-desc">Immutable commit history with verified timestamps on public infrastructure</div>
+                    </div>
+                </div>
+
+                <div class="protection-item">
+                    <div class="protection-icon">🤖</div>
+                    <div class="protection-text">
+                        <div class="protection-label">AI Monitoring</div>
+                        <div class="protection-desc">Automated detection of unauthorized use across the internet</div>
+                    </div>
+                </div>
+
+                <div class="protection-item">
+                    <div class="protection-icon">💰</div>
+                    <div class="protection-text">
+                        <div class="protection-label">Whistleblower Rewards</div>
+                        <div class="protection-desc">£1,000-£50,000 rewards for reporting IP violations</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blockchain-proof">
+                <div class="blockchain-title">🔗 GitHub Verification</div>
+                <div class="blockchain-details">
+                    <strong>Repository:</strong> github.com/frederikgoossens/primisact-protocol-core<br>
+                    <strong>Timestamp:</strong> June 26, 2025, 01:26:42 UTC<br>
+                    <strong>Status:</strong> Verified & Immutable
+                </div>
+                <div class="hash-display">
+                    Commit Hash: d15528d6e4669d
+                </div>
+                <div class="hash-display">
+                    Content Hash: [To be generated from actual files]
+                </div>
+                <div style="margin-top: 15px; color: #ccc; font-size: 14px;">
+                    This hash represents the immutable fingerprint of our IP, stored permanently on GitHub's verified infrastructure.
+                </div>
+            </div>
+
+            <div class="legal-notice">
+                <div class="legal-title">⚖️ Legal Framework</div>
+                <div class="legal-text">
+                    PrimisAct operates under a comprehensive legal protection framework combining established IP law principles:
+                    <br><br>
+                    <strong>Trade Secret Protection:</strong> Our technical implementation is protected under the Uniform Trade Secrets Act and international equivalents, with proper confidentiality measures in place.
+                    <br><br>
+                    <strong>Copyright Protection:</strong> All written materials, software code, and technical documentation are automatically protected by copyright from the moment of creation.
+                    <br><br>
+                    <strong>GitHub Verification:</strong> Our commit timestamps create irrefutable evidence of creation date, legally equivalent to notarized documents and accepted by courts worldwide.
+                    <br><br>
+                    <strong>Defensive Publication:</strong> This public disclosure prevents others from obtaining patents on similar systems while preserving our implementation secrets.
+                </div>
+            </div>
+
+            <div class="coming-soon">
+                <h2>Platform Launching Soon</h2>
+                <p>The revolutionary PrimisAct platform will be available shortly. Be the first to know when we launch.</p>
+                <form class="notify-form" onsubmit="subscribeToNotifications(event)">
+                    <input type="email" class="notify-input" placeholder="Enter your email" required>
+                    <button type="submit" class="notify-button">Notify Me</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            © 2025 PrimisAct by Frederik Goossens via Merlaz Limited in collaboration with Muggleman Ventures. All rights reserved.
+        </div>
+        <div class="contact-info">
+            Legal inquiries: <a href="mailto:frederik@merlaz.com">frederik@merlaz.com</a> | 
+            Licensing: <a href="mailto:frederik@merlaz.com">frederik@merlaz.com</a>
+        </div>
+    </footer>
+
+    <script>
+        function subscribeToNotifications(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            alert(`Thank you! We'll notify ${email} when PrimisAct launches.`);
+            event.target.querySelector('input[type="email"]').value = '';
+        }
+
+        // Add some dynamic elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update timestamp to be more recent
+            const now = new Date();
+            const timestamp = now.toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
+            
+            // Add some visual flair to the hash
+            const hashes = document.querySelectorAll('.hash-display');
+            hashes.forEach(hash => {
+                hash.addEventListener('click', function() {
+                    navigator.clipboard.writeText(this.textContent);
+                    this.style.background = '#222';
+                    setTimeout(() => {
+                        this.style.background = '#000';
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+
+        <!-- Legal Protection Footer -->
+        <div style="background: #000; border-top: 1px solid #222; padding: 40px 0; margin-top: 120px;">
+            <div class="container">
+                <div style="text-align: center; padding: 20px; border: 1px solid #333; border-radius: 8px; background: #111;">
+                    <h4 style="color: #fff; font-size: 18px; margin-bottom: 16px; font-weight: 600;">
+                        ⚠️ CONFIDENTIAL INFORMATION
+                    </h4>
+                    <p style="color: #999; font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                        This website contains proprietary and confidential information about PrimisAct's 
+                        revolutionary IP protection technology. By accessing this site, you acknowledge 
+                        that all information is confidential and agree to maintain strict confidentiality.
+                    </p>
+                    <p style="color: #666; font-size: 12px; margin-bottom: 20px;">
+                        Trade secrets, algorithms, and business methods are protected under international law. 
+                        Unauthorized disclosure may result in legal action and damages up to £2,000,000.
+                    </p>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <a href="/confidentiality-terms" style="color: #fff; text-decoration: none; 
+                           padding: 8px 16px; border: 1px solid #333; border-radius: 4px; font-size: 12px;
+                           transition: all 0.2s;">
+                            View Full Terms
+                        </a>
+                        <a href="mailto:frederik@merlaz.com?subject=NDA Request - Demo Access" 
+                           style="color: #fff; text-decoration: none; padding: 8px 16px; 
+                           border: 1px solid #333; border-radius: 4px; font-size: 12px;
+                           transition: all 0.2s;">
+                            Request Demo (NDA Required)
+                        </a>
+                        <a href="mailto:frederik@merlaz.com?subject=Licensing Inquiry" 
+                           style="color: #fff; text-decoration: none; padding: 8px 16px; 
+                           border: 1px solid #333; border-radius: 4px; font-size: 12px;
+                           transition: all 0.2s;">
+                            Licensing Inquiries
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Your existing footer content stays here -->
+                <div class="footer-content" style="margin-top: 40px;">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <a href="/file">File Invention</a>
+                        <a href="/search">Search</a>
+                        <a href="/pricing">Pricing</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <a href="/about">About</a>
+                        <a href="/team">Team</a>
+                        <a href="/contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <a href="/terms">Terms</a>
+                        <a href="/privacy">Privacy</a>
+                        <a href="/confidentiality-terms">Confidentiality</a>
+                    </div>
+                </div>
+                
+                <p class="copyright" style="margin-top: 40px;">
+                    © 2025 PrimisAct by Merlaz Limited. All rights reserved. 
+                    Protected by trade secret and patent law.
+                </p>
+            </div>
+        </div>
+
+<!-- ALSO ADD THIS POPUP FOR SERIOUS INQUIRIES -->
+<div id="nda-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+     background: rgba(0,0,0,0.9); z-index: 10000; align-items: center; justify-content: center;">
+    <div style="background: #000; border: 2px solid #333; border-radius: 12px; padding: 40px; 
+         max-width: 500px; margin: 20px; text-align: center;">
+        <h3 style="color: #fff; margin-bottom: 20px; font-size: 24px;">🔒 Confidentiality Required</h3>
+        <p style="color: #999; margin-bottom: 30px; line-height: 1.6;">
+            To access detailed information about PrimisAct's proprietary technology, 
+            you must agree to maintain strict confidentiality of all information shared.
+        </p>
+        <div style="margin-bottom: 30px;">
+            <label style="color: #ccc; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <input type="checkbox" id="nda-agree" style="margin: 0;">
+                I agree to maintain confidentiality and will not share information with competitors
+            </label>
+        </div>
+        <div style="display: flex; gap: 15px; justify-content: center;">
+            <button onclick="closeNDAPopup()" style="padding: 12px 24px; background: #333; color: #fff; 
+                    border: none; border-radius: 6px; cursor: pointer;">
+                Cancel
+            </button>
+            <button onclick="acceptNDA()" style="padding: 12px 24px; background: #fff; color: #000; 
+                    border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+                Continue
+            </button>
+        </div>
+        <p style="color: #666; font-size: 12px; margin-top: 20px;">
+            <a href="/full-nda" style="color: #999;">View Full Legal NDA</a>
+        </p>
+    </div>
+</div>
+
+<script>
+// Show NDA popup for sensitive links
+function showNDAPopup() {
+    document.getElementById('nda-popup').style.display = 'flex';
+}
+
+function closeNDAPopup() {
+    document.getElementById('nda-popup').style.display = 'none';
+}
+
+function acceptNDA() {
+    const checkbox = document.getElementById('nda-agree');
+    if (checkbox.checked) {
+        // Store NDA acceptance
+        localStorage.setItem('nda-accepted', 'true');
+        localStorage.setItem('nda-date', new Date().toISOString());
+        closeNDAPopup();
+        // Proceed with original action
+        window.location.href = '/demo'; // or whatever the user was trying to access
+    } else {
+        alert('Please agree to confidentiality terms to continue.');
+    }
+}
+
+// Trigger NDA popup for sensitive links
+document.addEventListener('DOMContentLoaded', function() {
+    // Add NDA requirement to sensitive links
+    const sensitiveLinks = document.querySelectorAll('a[href*="demo"], a[href*="pricing"], a[href*="api"]');
+    sensitiveLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (!localStorage.getItem('nda-accepted')) {
+                e.preventDefault();
+                showNDAPopup();
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
