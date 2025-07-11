@@ -5,7 +5,7 @@
 **PrimisAct™** is a proprietary decentralized IP protection protocol owned by **Merlaz Limited**.
 
 ### 🚨 IP PROTECTION STATUS
-- **Copyright**: © 2025 Merlaz Limited - ALL RIGHTS RESERVED
+- **Copyright**: © 2025 Merlaz Limited & Muggleman LTD - ALL RIGHTS RESERVED
 - **Priority Date**: June 26, 2025 (GitHub Verified Timestamp)
 - **Trade Secrets**: PROTECTED under international law
 - **Patent Strategy**: UK patent application filing in progress (£60 self-filed approach)
