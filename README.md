@@ -51,7 +51,7 @@ Our approach demonstrates that robust IP protection doesn't require expensive le
 - **Founder**: Frederik Goossens
 
 ### 🏛️ ENFORCEMENT NOTICE
-Merlaz Limited actively enforces its intellectual property rights worldwide. 
+Merlaz Limited & Muggleman LTD actively enforces its intellectual property rights worldwide. 
 Any unauthorized use will result in immediate legal action.
 
 ### 📜 DEFENSIVE PUBLICATION
@@ -125,4 +125,4 @@ Violations may result in legal action and damages up to £2,000,000.
 
 ---
 
-**© 2025 Merlaz Limited. All rights reserved.**
+**© 2025 Merlaz Limited & Muggleman LTD. All rights reserved.**
